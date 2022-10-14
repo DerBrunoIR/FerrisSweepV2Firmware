@@ -25,18 +25,14 @@
             label = "TAP_DANCE_SHIFT_CAPS";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings =
-                <&sk shift>,
-                <&caps_word>;
+            bindings = <&sk shift>,<&caps_word>;
         };
         tbspace: tab_dance_space_tab {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_SPACE_TAB";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings =
-                <&kp space>,
-                <&kp tab>;
+            bindings = <&kp space>, <&kp tab>;
         };
     };
 
