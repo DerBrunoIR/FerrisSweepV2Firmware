@@ -14,7 +14,28 @@
     // tapping_term_ms = <200>;
 };
 
+&
+
 / {
+    
+    behaviors {
+        tbshift: tap_dance_shift_caps {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_SHIFT_CAPS";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&sk shift>, <&caps_word>;
+        }
+        
+        tbspace: tab_dance_space_tab {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_SPACE_TAB";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp space>, <&kp tab>;
+        }
+    }
+
     combos {
         compatible = "zmk,combos";
 
@@ -46,8 +67,8 @@
             bindings = <
        &kp Q   &kp W   &kp E          &kp R      &kp T   &kp Z   &kp U      &kp I    &kp O            &kp P
        &kp A   &kp S   &kp D          &kp F      &kp G   &kp H   &kp J      &kp K    &kp L        &kp ENTER
- &mt LCTRL Y   &kp X   &kp C          &kp V      &kp B   &kp N   &kp M  &kp COMMA  &kp DOT  &sk RIGHT_SHIFT
-                              &kp BACKSPACE  &kp SPACE  &tog 1  &tog 2
+ &mt LCTRL Y   &kp X   &kp C          &kp V      &kp B   &kp N   &kp M  &kp COMMA  &kp DOT         &tbshift
+                              &kp BACKSPACE   &tbspace  &tog 1  &tog 2
             >;
         };
 
