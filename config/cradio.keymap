@@ -93,22 +93,22 @@
                                              &trans       &trans          &trans           &trans
             >;
         };
-
-        SYSTEM {
-            bindings = <
-           &reset        &bootloader   &none   &none   &none        &reset   &bootloader   &none   &none   &none
-     &out OUT_USB       &out OUT_BLE   &none   &none   &none  &out OUT_USB  &out OUT_BLE   &none   &none  &trans
- &ext_power EP_ON  &ext_power EP_OFF   &none   &none   &none         &none         &none   &none   &none  &trans
-                                              &trans  &trans        &trans        &trans
-            >;
-        };
-
+        
         NAVIGATION {
             bindings = <
  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                          &trans  &trans  &trans  &trans
+            >;
+        };
+        
+        SYSTEM {
+            bindings = <
+           &reset        &bootloader   &none   &none   &none        &reset   &bootloader   &none   &none   &none
+     &out OUT_USB       &out OUT_BLE   &none   &none   &none  &out OUT_USB  &out OUT_BLE   &none   &none  &trans
+ &ext_power EP_ON  &ext_power EP_OFF   &none   &none   &none         &none         &none   &none   &none  &trans
+                                              &trans  &trans        &trans        &trans
             >;
         };
     };
