@@ -6,6 +6,8 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/ext_power.h>
 
 &mt {
     //  flavor = "tap-preferred";
@@ -15,6 +17,26 @@
 / {
     combos {
         compatible = "zmk,combos";
+
+        ESC {
+            bindings = <&kp ESC>;
+            key-positions = <0 1>;
+        };
+
+        ToSystem {
+            bindings = <&sl 3>;
+            key-positions = <0 30>;
+        };
+
+        ToSystem {
+            bindings = <&sl 3>;
+            key-positions = <9 33>;
+        };
+
+        new_combo {
+            bindings = <&trans>;
+            key-positions = <>;
+        };
     };
 
     keymap {
@@ -25,7 +47,7 @@
   &kp Q   &kp W   &kp E          &kp R      &kp T   &kp Z   &kp U      &kp I    &kp O           &kp P
   &kp A   &kp S   &kp D          &kp F      &kp G   &kp H   &kp J      &kp K    &kp L       &kp ENTER
   &kp Y   &kp X   &kp C          &kp V      &kp B   &kp N   &kp M  &kp COMMA  &kp DOT  &sk LEFT_SHIFT
-                         &kp BACKSPACE  &kp SPACE   &mo 1   &mo 2
+                         &kp BACKSPACE  &kp SPACE  &tog 1  &tog 2
             >;
         };
 
@@ -44,6 +66,15 @@
    &kp AT          &kp GRAVE    &trans      &trans       &trans  &kp LEFT_BRACE  &kp RIGHT_BRACE        &kp UNDERSCORE              &kp TILDE     &trans
    &trans             &trans    &trans      &trans       &trans          &trans           &trans                &trans                 &trans     &trans
                                             &trans       &trans          &trans           &trans
+            >;
+        };
+
+        SYSTEM {
+            bindings = <
+           &reset        &bootloader  &trans  &trans  &trans        &reset   &bootloader  &trans  &trans  &trans
+     &out OUT_USB       &out OUT_BLE  &trans  &trans  &trans  &out OUT_USB  &out OUT_BLE  &trans  &trans  &trans
+ &ext_power EP_ON  &ext_power EP_OFF  &trans  &trans  &trans        &trans        &trans  &trans  &trans  &trans
+                                              &trans  &trans        &trans        &trans
             >;
         };
     };
