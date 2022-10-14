@@ -25,17 +25,17 @@
 
         ToSystem {
             bindings = <&sl 3>;
-            key-positions = <0 30>;
+            key-positions = <0 30 3>;
         };
 
         ToSystem {
             bindings = <&sl 3>;
-            key-positions = <9 33>;
+            key-positions = <9 33 6>;
         };
 
-        new_combo {
-            bindings = <&trans>;
-            key-positions = <>;
+        ESC {
+            bindings = <&kp ESC>;
+            key-positions = <9 8>;
         };
     };
 
