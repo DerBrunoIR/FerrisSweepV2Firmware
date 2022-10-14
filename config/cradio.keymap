@@ -78,10 +78,10 @@
 
         NUMERIC {
             bindings = <
- &kp NUMBER_1   &kp NUMBER_2      &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5      &kp NUMBER_6       &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
- &kp QUESTION       &kp PIPE             &none         &none         &none  &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp MINUS      &kp PLUS        &trans
-        &none  &kp LESS_THAN  &kp GREATER_THAN         &none         &none            &trans      &kp BACKSLASH     &kp SLASH     &kp ASTRK        &trans
-                                                      &trans        &trans            &trans             &trans
+     &kp NUMBER_1   &kp NUMBER_2      &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5      &kp NUMBER_6       &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
+     &kp QUESTION       &kp PIPE             &none         &none         &none  &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp MINUS      &kp PLUS        &trans
+ &kp LEFT_CONTROL  &kp LESS_THAN  &kp GREATER_THAN  &kp LEFT_ALT         &none             &none      &kp BACKSLASH     &kp SLASH     &kp ASTRK        &trans
+                                                          &trans        &trans            &trans             &trans
             >;
         };
 
@@ -89,7 +89,7 @@
             bindings = <
  &kp EXCL  &kp DOUBLE_QUOTES   &kp HASH  &kp DOLLAR  &kp PERCENT   &kp AMPERSAND        &kp SLASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL
    &kp AT   &kp SINGLE_QUOTE  &kp GRAVE       &none        &none  &kp LEFT_BRACE  &kp RIGHT_BRACE        &kp UNDERSCORE              &kp TILDE     &trans
-    &none              &none      &none       &none        &none           &none            &none                 &none                  &none     &trans
+   &trans              &none      &none       &none        &none           &none            &none                 &none                  &none     &trans
                                              &trans       &trans          &trans           &trans
             >;
         };
