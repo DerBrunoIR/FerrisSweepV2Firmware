@@ -5,7 +5,7 @@
 | &ht_hp | Hold-Tap |
 | &mt | Mod-Tap |
 | &gresc | Mod-Morph |
-| &ktKey | Toggle |
+| &kt | Key Toggle |
 | &sk | Sticky Key |
 | &caps_word | CapsWord |
 | &key_repeat | KeyRepeat |
