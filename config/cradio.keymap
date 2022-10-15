@@ -27,7 +27,9 @@
             tapping-term-ms = <200>;
             bindings = <&sk shift>,<&kp caps>;
         };
-        
+    };
+    
+    behaviors {
         td_space: tap_dance_space_tab {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_SPACE_TAB";
