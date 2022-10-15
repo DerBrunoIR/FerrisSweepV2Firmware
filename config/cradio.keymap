@@ -25,7 +25,7 @@
             label = "TAP_DANCE_SHIFT_CAPS";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = "<&sk shift>,<&caps_word>";
+            bindings = <&sk shift>,<&caps_word>;
         };
         
         tbspace: tab_dance_space_tab {
@@ -33,31 +33,31 @@
             label = "TAP_DANCE_SPACE_TAB";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = "<&kp space>, <&kp tab>";
+            bindings = <&kp space>, <&kp tab>;
         };
     };
 
     combos {
         compatible = "zmk,combos";
 
-        ESC {
+        ESC1 {
             bindings = <&kp ESC>;
             key-positions = <0 1>;
         };
 
-        ToSystem {
+        ESC2 {
+            bindings = <&kp ESC>;
+            key-positions = <9 8>;
+        };
+
+        ToSystem1 {
             bindings = <&sl 4>;
             key-positions = <0 30 3>;
         };
 
-        ToSystem {
+        ToSystem2 {
             bindings = <&sl 4>;
             key-positions = <9 33 6>;
-        };
-
-        ESC {
-            bindings = <&kp ESC>;
-            key-positions = <9 8>;
         };
 
         enableNavigationLayer {
