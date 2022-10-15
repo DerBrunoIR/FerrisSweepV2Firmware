@@ -20,15 +20,15 @@
 
 / {
     behaviors {
-        tbshift: tap_dance_shift_caps {
+        td_shift: tap_dance_shift_caps {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_SHIFT_CAPS";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&sk shift>,<&caps_word>;
+            bindings = <&sk shift>,<&kp caps>;
         };
         
-        tbspace: tab_dance_space_tab {
+        td_space: tap_dance_space_tab {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_SPACE_TAB";
             #binding-cells = <0>;
@@ -40,27 +40,27 @@
     combos {
         compatible = "zmk,combos";
 
-        ESC1 {
+        combo_esc_1 {
             bindings = <&kp ESC>;
             key-positions = <0 1>;
         };
 
-        ESC2 {
+        combo_esc_2 {
             bindings = <&kp ESC>;
             key-positions = <9 8>;
         };
 
-        ToSystem1 {
+        combo_SystemLayer_1 {
             bindings = <&sl 4>;
             key-positions = <0 30 3>;
         };
 
-        ToSystem2 {
+        combo_SystemLayer_2 {
             bindings = <&sl 4>;
             key-positions = <9 33 6>;
         };
 
-        enableNavigationLayer {
+        combo_NavigationLayer {
             bindings = <&tog 3>;
             key-positions = <33 32>;
         };
@@ -73,8 +73,8 @@
             bindings = <
        &kp Q   &kp W   &kp E          &kp R     &kp T   &kp Z   &kp U      &kp I    &kp O      &kp P
        &kp A   &kp S   &kp D          &kp F     &kp G   &kp H   &kp J      &kp K    &kp L  &kp ENTER
- &mt LCTRL Y   &kp X   &kp C          &kp V     &kp B   &kp N   &kp M  &kp COMMA  &kp DOT   &tbshift
-                              &kp BACKSPACE  &tbspace   &mo 1   &mo 2
+ &mt LCTRL Y   &kp X   &kp C          &kp V     &kp B   &kp N   &kp M  &kp COMMA  &kp DOT   &td_shift
+                              &kp BACKSPACE  &td_space   &mo 1   &mo 2
             >;
         };
 
@@ -82,8 +82,8 @@
             bindings = <
      &kp NUMBER_1   &kp NUMBER_2      &kp NUMBER_3   &kp NUMBER_4  &kp NUMBER_5      &kp NUMBER_6       &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
      &kp QUESTION       &kp PIPE             &none          &none         &none  &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp MINUS      &kp PLUS     &kp ENTER
- &kp LEFT_CONTROL  &kp LESS_THAN  &kp GREATER_THAN          &none         &none             &none      &kp BACKSLASH     &kp SLASH     &kp ASTRK      &tbshift
-                                                    &kp BACKSPACE      &tbspace             &mo 0              &mo 2
+ &kp LEFT_CONTROL  &kp LESS_THAN  &kp GREATER_THAN          &none         &none             &none      &kp BACKSLASH     &kp SLASH     &kp ASTRK      &td_shift
+                                                    &kp BACKSPACE      &td_space             &mo 0              &mo 2
             >;
         };
 
@@ -91,8 +91,8 @@
             bindings = <
   &kp EXCL  &kp DOUBLE_QUOTES   &kp HASH     &kp DOLLAR  &kp PERCENT   &kp AMPERSAND        &kp SLASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL
     &kp AT   &kp SINGLE_QUOTE  &kp GRAVE          &none        &none  &kp LEFT_BRACE  &kp RIGHT_BRACE        &kp UNDERSCORE              &kp TILDE  &kp ENTER
- &kp LCTRL              &none      &none          &none        &none           &none            &none                 &none                  &none   &tbshift
-                                          &kp BACKSPACE     &tbspace           &mo 0            &mo 1
+ &kp LCTRL              &none      &none          &none        &none           &none            &none                 &none                  &none   &td_shift
+                                          &kp BACKSPACE     &td_space           &mo 0            &mo 1
             >;
         };
 
@@ -100,8 +100,8 @@
             bindings = <
      &none       &none         &none          &none     &none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5
  &sk LCTRL  &sk LSHIFT  &sk LEFT_ALT       &sk LWIN     &none         &kp C         &kp V      &kp LEFT     &kp RIGHT       &kp TAB
-     &none       &none         &none          &none     &none         &kp X         &kp R         &none         &none      &tbshift
-                                      &kp BACKSPACE  &tbspace         &mo 0         &mo 1
+     &none       &none         &none          &none     &none         &kp X         &kp R         &none         &none      &td_shift
+                                      &kp BACKSPACE  &td_space         &mo 0         &mo 1
             >;
         };
 
