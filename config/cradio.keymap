@@ -25,7 +25,7 @@
             label = "TAP_DANCE_SHIFT_CAPS";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&sk shift>,<&kp caps>;
+            bindings = <&sk LEFT_SHIFT>,<&kp CAPS>;
         };
         
         td_space: tap_dance_space_tab {
@@ -33,7 +33,7 @@
             label = "TAP_DANCE_SPACE_TAB";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp space>, <&kp tab>;
+            bindings = <&kp SPACE>, <&kp TAB>;
         };
     };
 
