@@ -56,12 +56,12 @@
 
         combo_SystemLayer_1 {
             bindings = <&sl 4>;
-            key-positions = <0 30 3>;
+            key-positions = <0 4 31>;
         };
 
         combo_SystemLayer_2 {
             bindings = <&sl 4>;
-            key-positions = <9 33 6>;
+            key-positions = <9 32 5>;
         };
 
         combo_NavigationLayer {
