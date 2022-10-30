@@ -55,12 +55,12 @@
         };
 
         combo_SystemLayer_1 {
-            bindings = <&tog 4>;
+            bindings = <&sl 4>;
             key-positions = <0 4 31>;
         };
 
         combo_SystemLayer_2 {
-            bindings = <&tog 4>;
+            bindings = <&sl 4>;
             key-positions = <9 32 5>;
         };
 
