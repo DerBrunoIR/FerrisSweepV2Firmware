@@ -48,6 +48,15 @@
                 <&kp TAB>,
                 <&kp ENTER>;
         };
+        td_layer_one: tap-dance_layer_one {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_LAYER_ONE";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings =
+                <&tog 1>,
+                <&sk RIGHT_ALT>;
+        };
     };
 
     combos {
