@@ -12,6 +12,7 @@
 
 &mt {
     //  flavor = "tap-preferred";
+
     tapping_term_ms = <300>;
 };
 
@@ -98,10 +99,10 @@
 
         DEFAULT {
             bindings = <
-  &kp Q   &kp W   &kp E                   &kp R     &kp T   &kp Z                   &kp U      &kp I    &kp O      &kp P
-  &kp A   &kp S   &kp D                   &kp F     &kp G   &kp H                   &kp J      &kp K    &kp L  &td_enter
-  &kp Y   &kp X   &kp C                   &kp V     &kp B   &kp N                   &kp M  &kp COMMA  &kp DOT  &td_shift
-                         &mt LEFT_CONTROL SPACE  &sk RALT  &tog 1  &mt LEFT_ALT BACKSPACE
+  &kp Q   &kp W   &kp E                   &kp R   &kp T     &kp Z                   &kp U      &kp I    &kp O           &kp P
+  &kp A   &kp S   &kp D                   &kp F   &kp G     &kp H                   &kp J      &kp K    &kp L       &kp ENTER
+  &kp Y   &kp X   &kp C                   &kp V   &kp B     &kp N                   &kp M  &kp COMMA  &kp DOT  &kp LEFT_SHIFT
+                         &mt LEFT_CONTROL SPACE  &tog 1  &sk RALT  &mt LEFT_ALT BACKSPACE
             >;
         };
 
