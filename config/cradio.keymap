@@ -39,6 +39,15 @@
                 <&kp SPACE>,
                 <&kp TAB>;
         };
+        td_enter: tap_dance_enter_tab {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCEENTER_TAB";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings =
+                <&kp TAB>,
+                <&kp ENTER>;
+        };
     };
 
     combos {
