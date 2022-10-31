@@ -12,7 +12,7 @@
 
 &mt {
     //  flavor = "tap-preferred";
-    // tapping_term_ms = <200>;
+    tapping_term_ms = <300>;
 };
 
 &sl {
