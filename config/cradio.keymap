@@ -26,14 +26,20 @@
             compatible = "zmk,behavior-mod-morph";
             label = "mm_tab_enter";
             #binding-cells = <0>;
-            bindings = <&kp TAB>, <&kp ENTER>;
+            bindings =
+                <&kp TAB>,
+                <&kp ENTER>;
+
             mods = <MOD_RALT>;
-        };        
+        };
         mm_shift_caps: mm_shift_caps {
             compatible = "zmk,behavior-mod-morph";
             label = "mm_shift_caps";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
+            bindings =
+                <&kp LEFT_SHIFT>,
+                <&kp CAPS>;
+
             mods = <MOD_RALT>;
         };
     };
@@ -78,8 +84,8 @@
         DEFAULT {
             bindings = <
   &kp Q   &kp W   &kp E                   &kp R   &kp T     &kp Z                   &kp U      &kp I    &kp O           &kp P
-  &kp A   &kp S   &kp D                   &kp F   &kp G     &kp H                   &kp J      &kp K    &kp L       &kp ENTER
-  &kp Y   &kp X   &kp C                   &kp V   &kp B     &kp N                   &kp M  &kp COMMA  &kp DOT  &kp LEFT_SHIFT
+  &kp A   &kp S   &kp D                   &kp F   &kp G     &kp H                   &kp J      &kp K    &kp L   &mm_tab_enter
+  &kp Y   &kp X   &kp C                   &kp V   &kp B     &kp N                   &kp M  &kp COMMA  &kp DOT  &mm_shift_caps
                          &mt LEFT_CONTROL SPACE  &tog 1  &sk RALT  &mt LEFT_ALT BACKSPACE
             >;
         };
