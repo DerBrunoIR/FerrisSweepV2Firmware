@@ -84,7 +84,12 @@
 
         new_combo {
             bindings = <&tog 3>;
-            key-positions = <4 31 32 5 9 0>;
+            key-positions = <4 31 0>;
+        };
+
+        new_combo {
+            bindings = <&tog 3>;
+            key-positions = <9 5 32>;
         };
     };
 
