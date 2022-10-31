@@ -22,41 +22,19 @@
 
 / {
     behaviors {
-        td_shift: tap_dance_shift_caps {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_SHIFT_CAPS";
+        mm_tab_enter: mm_tab_enter {
+            compatible = "zmk,behavior-mod-morph";
+            label = "mm_tab_enter";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings =
-                <&sk LEFT_SHIFT>,
-                <&kp CAPS>;
-        };
-        td_space: tap_dance_space_tab {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_SPACE_TAB";
+            bindings = <&kp TAB>, <&kp ENTER>;
+            mods = <MOD_RALT>;
+        };        
+        mm_shift_caps: mm_shift_caps {
+            compatible = "zmk,behavior-mod-morph";
+            label = "mm_shift_caps";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings =
-                <&kp SPACE>,
-                <&kp TAB>;
-        };
-        td_enter: tap_dance_enter_tab {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCEENTER_TAB";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings =
-                <&kp TAB>,
-                <&kp ENTER>;
-        };
-        td_layer_one: tap-dance_layer_one {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_LAYER_ONE";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings =
-                <&tog 1>,
-                <&sk RIGHT_ALT>;
+            bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
+            mods = <MOD_RALT>;
         };
     };
 
