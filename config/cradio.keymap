@@ -27,8 +27,8 @@
             label = "mm_tab_enter";
             #binding-cells = <0>;
             bindings =
-                <&kp ENTER>,
-                <&kp TAB>;
+                <&kp TAB>,
+                <&kp ENTER>;
 
             mods = <MOD_RALT>;
         };
@@ -37,7 +37,7 @@
             label = "mm_shift_caps";
             #binding-cells = <0>;
             bindings =
-                <&kp LEFT_SHIFT>,
+                <&sk LEFT_SHIFT>,
                 <&kp CAPS>;
 
             mods = <MOD_RALT>;
