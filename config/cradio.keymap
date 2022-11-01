@@ -42,6 +42,16 @@
 
             mods = <MOD_RALT>;
         };
+        mm_switch_layer: mm_switch_layer {
+            compatible = "zmk,behavior-mod-morph";
+            label = "mm_switch_layer";
+            #binding-cells = <0>;
+            bindings =
+                <&tog 1>,
+                <&tog 2>;
+                
+            mods = <MOD_RALT>;
+        };
     };
 
     combos {
