@@ -17,7 +17,7 @@
 };
 
 &sl {
-    release-after-ms = <2000>;
+    release-after-ms = <1500>;
 };
 
 / {
@@ -38,7 +38,7 @@
             #binding-cells = <0>;
             bindings =
                 <&sk LEFT_SHIFT>,
-                <&kp CAPS>;
+                <&kt LEFT_SHIFT>;
 
             mods = <MOD_RALT>;
         };
