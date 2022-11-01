@@ -27,8 +27,8 @@
             label = "mm_tab_enter";
             #binding-cells = <0>;
             bindings =
-                <&kp TAB>,
-                <&kp ENTER>;
+                <&kp ENTER>,
+                <&kp TAB>;
 
             mods = <MOD_RALT>;
         };
