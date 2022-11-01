@@ -68,16 +68,6 @@
         };
 
         new_combo {
-            bindings = <&tog 2>;
-            key-positions = <32 15>;
-        };
-
-        new_combo {
-            bindings = <&tog 2>;
-            key-positions = <31 14>;
-        };
-
-        new_combo {
             bindings = <&tog 3>;
             key-positions = <4 31 0>;
         };
@@ -85,6 +75,16 @@
         new_combo {
             bindings = <&tog 3>;
             key-positions = <9 5 32>;
+        };
+
+        combo_super_left {
+            bindings = <&kp LWIN>;
+            key-positions = <20 21>;
+        };
+
+        combo_super_right {
+            bindings = <&kp RGUI>;
+            key-positions = <29 28>;
         };
     };
 
