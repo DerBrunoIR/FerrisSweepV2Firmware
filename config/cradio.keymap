@@ -67,24 +67,19 @@
             key-positions = <9 8>;
         };
 
-        new_combo {
+        combo_super_right {
             bindings = <&tog 3>;
-            key-positions = <4 31 0>;
-        };
-
-        new_combo {
-            bindings = <&tog 3>;
-            key-positions = <9 5 32>;
+            key-positions = <0 1 9 8>;
         };
 
         combo_super_left {
             bindings = <&kp LWIN>;
-            key-positions = <20 21>;
+            key-positions = <13 12>;
         };
 
         combo_super_right {
             bindings = <&kp RGUI>;
-            key-positions = <29 28>;
+            key-positions = <16 17>;
         };
     };
 
