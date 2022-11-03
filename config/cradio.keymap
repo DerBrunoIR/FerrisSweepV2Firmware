@@ -97,17 +97,17 @@
 
         NUMERIC {
             bindings = <
-         &kp NUMBER_1   &kp NUMBER_2      &kp NUMBER_3      &kp NUMBER_4   &kp NUMBER_5  &kp NUMBER_6       &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
-            &kp MINUS  &kp SEMICOLON  &kp SINGLE_QUOTE  &kp LEFT_BRACKET  &kp BACKSLASH     &kp GRAVE  &kp RIGHT_BRACKET     &kp SLASH     &kp EQUAL        &trans
- &kp NON_US_BACKSLASH          &none             &none             &none          &none         &none              &none        &trans        &trans        &trans
-                                                                  &trans         &trans        &trans             &trans
+         &kp NUMBER_1   &kp NUMBER_2      &kp NUMBER_3      &kp NUMBER_4   &kp NUMBER_5       &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
+            &kp MINUS  &kp SEMICOLON  &kp SINGLE_QUOTE  &kp LEFT_BRACKET  &kp BACKSLASH  &kp RIGHT_BRACKET     &kp GRAVE     &kp SLASH     &kp EQUAL        &trans
+ &kp NON_US_BACKSLASH          &none             &none             &none          &none              &none         &none        &trans        &trans        &trans
+                                                                  &trans         &trans             &trans        &trans
             >;
         };
 
         SHORTCUTS {
             bindings = <
  &kp F1          &kp F2            &kp F3             &kp F4           &kp F5                  &kp HOME           &kp PAGE_UP         &kp PAGE_DOWN                   &kp END   &none
-  &none  &kp C_PREVIOUS   &kp K_VOLUME_UP  &kp K_VOLUME_DOWN       &kp C_NEXT                  &kp LEFT                &kp UP              &kp DOWN                 &kp RIGHT  &trans
+  &none  &kp C_PREVIOUS   &kp K_VOLUME_UP  &kp K_VOLUME_DOWN       &kp C_NEXT                  &kp LEFT              &kp DOWN                &kp UP                 &kp RIGHT  &trans
   &none           &none  &kp C_PLAY_PAUSE         &kp C_MUTE  &kp PRINTSCREEN  &kp C_BRIGHTNESS_MINIMUM  &kp C_BRIGHTNESS_INC  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_MAXIMUM  &trans
                                                       &trans           &trans                    &trans                &trans
             >;
