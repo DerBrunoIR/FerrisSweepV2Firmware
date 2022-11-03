@@ -97,10 +97,10 @@
 
         NUMERIC {
             bindings = <
-  &kp NUMBER_1   &kp NUMBER_2   &kp NUMBER_3      &kp NUMBER_4      &kp NUMBER_5  &kp NUMBER_6       &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
-     &kp MINUS  &kp BACKSLASH  &kp SEMICOLON  &kp SINGLE_QUOTE  &kp LEFT_BRACKET     &kp GRAVE  &kp RIGHT_BRACKET     &kp SLASH     &kp EQUAL        &trans
- &kp        64          &none          &none             &none             &none         &none              &none        &trans        &trans        &trans
-                                                        &trans            &trans        &trans             &trans
+ &kp NUMBER_1   &kp NUMBER_2      &kp NUMBER_3      &kp NUMBER_4   &kp NUMBER_5  &kp NUMBER_6       &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
+    &kp MINUS  &kp SEMICOLON  &kp SINGLE_QUOTE  &kp LEFT_BRACKET  &kp BACKSLASH     &kp GRAVE  &kp RIGHT_BRACKET     &kp SLASH     &kp EQUAL        &trans
+       &kp 64          &none             &none             &none          &none         &none              &none        &trans        &trans        &trans
+                                                          &trans         &trans        &trans             &trans
             >;
         };
 
