@@ -67,11 +67,6 @@
             key-positions = <9 8>;
         };
 
-        combo_super_right {
-            bindings = <&sl 3>;
-            key-positions = <20 10>;
-        };
-
         combo_super_left {
             bindings = <&kp LWIN>;
             key-positions = <13 12>;
