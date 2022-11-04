@@ -58,7 +58,7 @@
             #binding-cells = <0>;
             bindings =
                 <&kp Z>,
-                <&kp tog 3>;
+                <&tog 3>;
 
             mods = <MOD_RALT>;
         };
