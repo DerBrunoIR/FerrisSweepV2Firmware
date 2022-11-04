@@ -69,7 +69,7 @@
 
         combo_super_right {
             bindings = <&tog 3>;
-            key-positions = <0 1 9 8>;
+            key-positions = <10 0>;
         };
 
         combo_super_left {
