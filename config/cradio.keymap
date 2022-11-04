@@ -68,8 +68,8 @@
         };
 
         combo_super_right {
-            bindings = <&tog 3>;
-            key-positions = <10 0>;
+            bindings = <&sl 3>;
+            key-positions = <20 10>;
         };
 
         combo_super_left {
