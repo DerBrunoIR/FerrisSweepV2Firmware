@@ -57,7 +57,7 @@
             label = "mm_z_switch";
             #binding-cells = <0>;
             bindings =
-                <&kp z>,
+                <&kp Z>,
                 <&kp tog 3>;
 
             mods = <MOD_RALT>;
