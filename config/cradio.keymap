@@ -51,6 +51,16 @@
                 <&tog 2>;
 
             mods = <MOD_RALT>;
+        };        
+        mm_z_switch: mm_z_switch {
+            compatible = "zmk,behavior-mod-morph";
+            label = "mm_z_switch";
+            #binding-cells = <0>;
+            bindings =
+                <&kp z>,
+                <&kp tog 3>;
+
+            mods = <MOD_RALT>;
         };
     };
 
