@@ -1,4 +1,4 @@
-/*
+ /*
  * Copyright (c) 2020 The ZMK Contributors
  *
  * SPDX-License-Identifier: MIT
@@ -46,7 +46,7 @@
             label = "mm_switch_layer";
             #binding-cells = <0>;
             bindings =
-                <&tog 1>,
+                <&mo 1>,
                 <&tog 2>;
 
             mods = <MOD_RALT>;
