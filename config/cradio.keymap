@@ -56,13 +56,24 @@
             label = "mm_z_switch";
             #binding-cells = <0>;
             bindings =
-                <&kp Z>,
+                <&kp A>,
                 <&tog 3>;
 
             mods = <MOD_RALT>;
         };
-    };
 
+        mm_y_switch: mm_y_switch {
+            compatible = "zmk,behavior-mod-morph";
+            label = "mm_z_switch";
+            #binding-cells = <0>;
+            bindings =
+                <&kp Y>,
+                <&kp LEFT_SHIFT>;
+
+            mods = <MOD_RALT>;
+        };
+    };
+ ̇
     combos {
         compatible = "zmk,combos";
 
